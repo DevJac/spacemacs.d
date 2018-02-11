@@ -345,10 +345,6 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
-  (setq org-ellipsis "⤵")
-  (setq org-startup-indented t)
-  (setq org-startup-truncated nil)
-  (add-hook 'org-mode-hook (lambda () (setq word-wrap t)))
   )
 
 (defun dotspacemacs/user-config ()
@@ -357,6 +353,10 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (setq org-ellipsis "⤵")
+  (setq org-startup-indented t)
+  (setq org-startup-truncated nil)
+  (add-hook 'org-mode-hook (lambda () (setq word-wrap t)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
