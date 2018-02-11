@@ -358,6 +358,8 @@ before packages are loaded."
   (setq org-startup-indented t)
   (setq org-startup-truncated nil)
   (add-hook 'org-mode-hook (lambda () (setq word-wrap t)))
+  (add-hook 'haskell-mode-hook 'dante-mode)
+  (add-hook 'haskell-mode-hook 'flycheck-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
