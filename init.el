@@ -36,6 +36,7 @@ This function should only modify configuration layer settings."
      neotree
      org
      racket
+     rust
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
