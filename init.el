@@ -35,6 +35,7 @@ This function should only modify configuration layer settings."
      helm
      neotree
      org
+     python
      racket
      rust
      ;; ----------------------------------------------------------------
