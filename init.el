@@ -31,6 +31,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(auto-completion
      emacs-lisp
+     finance
      haskell
      helm
      neotree
