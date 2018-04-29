@@ -34,6 +34,7 @@ This function should only modify configuration layer settings."
      finance
      haskell
      helm
+     markdown
      neotree
      org
      python
