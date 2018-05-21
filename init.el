@@ -364,6 +364,13 @@ before packages are loaded."
   (add-hook 'org-mode-hook (lambda () (setq word-wrap t)))
   (add-hook 'haskell-mode-hook 'dante-mode)
   (add-hook 'haskell-mode-hook 'flycheck-mode)
+
+  (defun update-org-latex-fragments ()
+    (org-toggle-latex-fragment '(16))
+    (plist-put org-format-latex-options :scale (* 1.5 (expt text-scale-mode-step text-scale-mode-amount)))
+    (org-toggle-latex-fragment '(16)))
+  (add-hook 'text-scale-mode-hook 'update-org-latex-fragments)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
