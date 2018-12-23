@@ -374,7 +374,23 @@ before packages are loaded."
     (org-toggle-latex-fragment '(16)))
   (add-hook 'text-scale-mode-hook 'update-org-latex-fragments)
 
+  (setq org-drill-hide-item-headings-p t)
+  (setq org-drill-add-random-noise-to-intervals-p t)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ `(org-modules (quote (org-drill)))
+)
+)
