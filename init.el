@@ -37,6 +37,8 @@ This function should only modify configuration layer settings."
      finance
      haskell
      helm
+     html
+     javascript
      markdown
      neotree
      org
@@ -45,6 +47,8 @@ This function should only modify configuration layer settings."
      rust
      semantic
      spell-checking
+     sql
+     syntax-checking
      version-control
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -56,7 +60,6 @@ This function should only modify configuration layer settings."
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     ;; syntax-checking
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
