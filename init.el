@@ -382,6 +382,7 @@ before packages are loaded."
 
   (setq js2-mode-show-parse-errors nil)
   (setq js2-mode-show-strict-warnings nil)
+  (setq js-indent-level 2)
 
   )
 
