@@ -380,6 +380,9 @@ before packages are loaded."
   (setq org-drill-hide-item-headings-p t)
   (setq org-drill-add-random-noise-to-intervals-p t)
 
+  (setq js2-mode-show-parse-errors nil)
+  (setq js2-mode-show-strict-warnings nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
